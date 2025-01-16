@@ -1,0 +1,70 @@
+[debug] [2024-10-29T09:44:17.770Z] ----------------------------------------------------------------------
+[debug] [2024-10-29T09:44:17.902Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LONOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-10-29T09:44:17.903Z] CLI Version:   13.20.2
+[debug] [2024-10-29T09:44:17.904Z] Platform:      win32
+[debug] [2024-10-29T09:44:17.904Z] Node Version:  v20.16.0
+[debug] [2024-10-29T09:44:17.908Z] Time:          Tue Oct 29 2024 10:44:17 GMT+0100 (West Africa Standard Time)
+[debug] [2024-10-29T09:44:17.908Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-29T09:44:17.938Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-10-29T09:44:18.258Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-29T09:44:18.259Z] > authorizing via signed-in user (chineduwinnerchibundo@gmail.com)
+[debug] [2024-10-29T09:44:18.260Z] [iam] checking project unted-ff8ff for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-29T09:44:18.261Z] Checked if tokens are valid: false, expires at: 1729599799508
+[debug] [2024-10-29T09:44:18.262Z] Checked if tokens are valid: false, expires at: 1729599799508
+[debug] [2024-10-29T09:44:18.262Z] > refreshing access token with scopes: []
+[debug] [2024-10-29T09:44:18.263Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-29T09:44:18.264Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-29T09:44:18.292Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: getaddrinfo ENOTFOUND firebase-public.firebaseio.com
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2024-10-29T09:44:18.306Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2024-10-29T09:44:18.307Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------655591804438187617481341","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2024-10-29T09:44:18.307Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-10-29T09:44:18.308Z] Checked if tokens are valid: false, expires at: 1729599799508
+[debug] [2024-10-29T09:44:18.308Z] Checked if tokens are valid: false, expires at: 1729599799508
+[debug] [2024-10-29T09:44:18.308Z] > refreshing access token with scopes: []
+[debug] [2024-10-29T09:44:18.308Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-29T09:44:18.308Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-29T09:44:18.344Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------842582906351085283836959","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2024-10-29T09:44:18.345Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-10-29T09:44:35.426Z] ----------------------------------------------------------------------
+[debug] [2024-10-29T09:44:35.430Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LONOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-10-29T09:44:35.431Z] CLI Version:   13.20.2
+[debug] [2024-10-29T09:44:35.431Z] Platform:      win32
+[debug] [2024-10-29T09:44:35.431Z] Node Version:  v20.16.0
+[debug] [2024-10-29T09:44:35.432Z] Time:          Tue Oct 29 2024 10:44:35 GMT+0100 (West Africa Standard Time)
+[debug] [2024-10-29T09:44:35.432Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-29T09:44:35.439Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-10-29T09:44:35.629Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-29T09:44:35.630Z] > authorizing via signed-in user (chineduwinnerchibundo@gmail.com)
+[debug] [2024-10-29T09:44:35.630Z] [iam] checking project unted-ff8ff for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-29T09:44:35.632Z] Checked if tokens are valid: false, expires at: 1729599799508
+[debug] [2024-10-29T09:44:35.632Z] Checked if tokens are valid: false, expires at: 1729599799508
+[debug] [2024-10-29T09:44:35.632Z] > refreshing access token with scopes: []
+[debug] [2024-10-29T09:44:35.634Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-29T09:44:35.634Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-29T09:44:35.645Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: getaddrinfo ENOTFOUND firebase-public.firebaseio.com
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2024-10-29T09:44:35.647Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2024-10-29T09:44:35.648Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------761814427232829709504282","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2024-10-29T09:44:35.648Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-10-29T09:44:35.649Z] Checked if tokens are valid: false, expires at: 1729599799508
+[debug] [2024-10-29T09:44:35.650Z] Checked if tokens are valid: false, expires at: 1729599799508
+[debug] [2024-10-29T09:44:35.650Z] > refreshing access token with scopes: []
+[debug] [2024-10-29T09:44:35.651Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-29T09:44:35.651Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-29T09:44:35.658Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------289339133956719302075944","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2024-10-29T09:44:35.658Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
